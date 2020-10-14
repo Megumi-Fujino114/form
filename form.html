@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="reset.css">
+   <link rel="stylesheet" type="text/css" href="form.css">
+   <title>フォーム練習</title>
+</head>
+<body>
+	<div class="contact">
+	  <form>
+	  	<!-- テキスト -->
+	  	<div class="form-group">
+	  	   <label class="label">お名前</label>
+	  	   <input type="text" name="" class="input-field" placeholder="お名前を記入してください">
+	  	</div>
+	  	<!-- ラジオボタン -->
+	  	<div class="form-group">
+	  		<span class="label">性別</span>
+	  		<span class="input-field">
+	  			<label>
+	  				<input type="radio" name="gender" id="male" >
+	  				男性
+	  			</label>
+	  			<label>
+	  			     <input type="radio" name="gender" id="female" >女性
+	  			</label>
+	  		</span>
+	  	</div>
+	  	<!-- セレクトボックス（プルダウン）-->
+	  	<div class="form-group">
+	  		<span class="label">出身</span>
+	  		<span class="input-field">
+	  			<select>
+	  				<option value="1">東京</option>
+	  				<option value="2">神奈川</option>
+	  				<option value="3">千葉</option>
+	  				<option value="4">沖縄</option>
+	  			</select>
+	  		</span>
+	  	</div>
+	  	<!--  チェックボックス-->
+	  	<div class="form-group"></div>
+	  		<span class="label">話せる言語</span>
+	  		<span class="input-field">
+				<label for="English">
+					<input type="checkbox" name="languge" id="English">英語
+				</label>
+				<label for="jaoanese">
+					<input type="checkbox" name="languge" id="English">日本語
+				</label>
+
+	  		</span>
+	  	<!-- ボタン -->
+	  	<div class="form-group">
+	  		<button type="submit" class="button">送信</button>
+	  	</div>
+	  </form>
+    </div>
+</body>
+</html>
+
+<!-- ラジオボタンの中のチェックボックスの中の○を元配置したい場合 -->
+<!-- <label>
+	  	<input type="radio" name="gender" id="male"
+	  checked="cheched">←これで元々チェックが入る
+			男性
+	</label> -->
